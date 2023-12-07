@@ -1,0 +1,49 @@
+ /*
+  * JFX ListView 
+  */ 
+.list-view
+{
+    -fx-padding: 0px;
+    -fx-background-insets: 0;
+    -fx-background-color: lightgray;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+
+ .list-cell, .list-cell:hover, .list-cell:selected, .list-cell:selected:hover
+ {
+    -fx-background-color: white;
+    -fx-background-insets: 2 3 2 3;
+    -fx-background-radius: 2;
+    -fx-border-insets: 1 2 1 1;
+    -fx-border-radius: 0;
+    -fx-border-color: black;
+    -fx-border-width: 0;
+ }
+ 
+ .list-cell:empty 
+ {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-border-color: transparent;
+ }
+ /*
+ .jfx-list-cell
+ {
+ 	-fx-padding: 2px ;
+ 	-fx-background-color: white;
+ 	-fx-text-fill: #403f45;
+ }
+ .jfx-list-cell:selected
+ {
+ 	-fx-background-color: white;
+ 	-fx-text-fill: #403f45;
+ }
+ .jfx-list-cell:hover
+ {
+ 	-fx-background-color: white;
+ }*/
+ .jfx-rippler 
+ {
+    -jfx-rippler-fill: #C7A3FA;
+ }

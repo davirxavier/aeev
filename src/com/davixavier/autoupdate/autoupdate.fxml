@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="primaryPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="320.0" style="-fx-background-color: -backcolor;" stylesheets="@autoupdate.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.davixavier.autoupdate.AutoUpdateController">
+   <children>
+      <VBox alignment="CENTER" maxHeight="132.0" maxWidth="200.0" prefHeight="122.0" prefWidth="112.0" style="-fx-spacing: 10; -fx-background-color: white; -fx-background-radius: 20;">
+         <children>
+            <Label text="Atualizando o programa">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <Label fx:id="statusLabel" text="Por favor espere...">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <JFXSpinner>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin></JFXSpinner>
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+         <StackPane.margin>
+            <Insets top="150.0" />
+         </StackPane.margin>
+         <effect>
+            <DropShadow />
+         </effect>
+      </VBox>
+      <ImageView fx:id="logoImg" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../application/img/icon.png" />
+         </image>
+         <StackPane.margin>
+            <Insets bottom="140.0" />
+         </StackPane.margin>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+   </children>
+</StackPane>

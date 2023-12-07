@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="primaryPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: -backcolor;" stylesheets="@../../application/application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.davixavier.panes.usuarios.UsuáriosController">
+   <center>
+      <JFXTreeTableView fx:id="usuariosTable" BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+      <AnchorPane prefHeight="32.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXTextField fx:id="pesquisaField" prefHeight="25.0" prefWidth="346.0" promptText="Pesquisar por nome" style="-jfx-label-float: false;" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="400.0" AnchorPane.topAnchor="5.0" />
+            <JFXButton buttonType="RAISED" onAction="#adicionarVendedor" text="Adicionar novo vendedor" AnchorPane.rightAnchor="153.0" AnchorPane.topAnchor="5.0" />
+            <JFXButton buttonType="RAISED" onAction="#adicionarGerente" text="Adicionar novo gerente" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
+            <JFXButton buttonType="RAISED" layoutX="413.0" layoutY="9.0" onAction="#pesquisar" text="Pesquisar" AnchorPane.rightAnchor="325.0" AnchorPane.topAnchor="5.0" />
+            <ImageView fx:id="cancelimg" fitHeight="10.0" fitWidth="10.0" layoutX="389.0" layoutY="13.0" onMouseClicked="#limparPesquisa" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="12.0" AnchorPane.rightAnchor="401.0" AnchorPane.topAnchor="13.0">
+               <image>
+                  <Image url="@../../application/img/closeimg.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

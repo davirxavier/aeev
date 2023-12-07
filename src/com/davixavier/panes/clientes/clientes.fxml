@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="primaryPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: -buttoncolorlight;" stylesheets="@../../application/application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.davixavier.panes.clientes.ClientesController">
+   <center>
+      <JFXTreeTableView fx:id="clientesTabela" BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+      <AnchorPane fx:id="clientesToolbar" prefHeight="45.0" prefWidth="700.0" BorderPane.alignment="CENTER" />
+   </top>
+</BorderPane>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="primaryPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: -buttoncolorlight;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.davixavier.application.MainController">
+   <children>
+      <StackPane fx:id="primaryStackPane" prefHeight="480.0" prefWidth="640.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <BorderPane fx:id="primaryBorderPane" prefHeight="217.0" prefWidth="238.0">
+               <center>
+                  <AnchorPane fx:id="centerPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+               </center>
+               <left>
+                  <AnchorPane fx:id="sidebarPane" prefHeight="600.0" prefWidth="100.0" style="-fx-background-color: -buttoncolor;" BorderPane.alignment="CENTER">
+                     <children>
+                        <VBox fx:id="optionsBox" prefHeight="215.0" prefWidth="100.0" style="-fx-spacing: 2;" AnchorPane.bottomAnchor="300.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <JFXListView fx:id="modulosList" maxWidth="99.0" prefHeight="400.0" prefWidth="98.0" style="-fx-background-color: -buttoncolor;" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </left>
+            </BorderPane>
+            <JFXSpinner fx:id="spinner" maxHeight="100.0" maxWidth="100.0" />
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

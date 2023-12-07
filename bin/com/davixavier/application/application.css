@@ -1,0 +1,384 @@
+/*
+ * Defining color
+ */
+
+#primaryPane
+{
+	-icy: #fafeff;
+	-icylight: #ffffff;
+	-icydark: #aec4c7;
+	-backcolor2: #403f45;
+	-backcolor: #724192;
+	-backcolorlight: white;
+	
+	-buttoncolor: #724192;
+	-buttoncolorlight: #4E2D64;/* #38006b;*/
+	-buttoncolordark: #ae52d4;
+	
+	/*-buttoncolor: #f9a825;
+	-buttoncolorlight: #ffd95a;
+	-buttoncolordark: #c17900;*/
+	
+	-buttoncolor2: lightgray;
+	-buttoncolor2light: gray;
+	-buttoncolor2dark: black;
+	/*-buttoncolor2: #f57f17;
+	-buttoncolor2light: #ffb04c;
+	-buttoncolor2dark: #bc5100;*/
+	
+	-textcolor: white;
+	-textcolor2: #403f45;
+}
+
+.menu .label
+{
+    -fx-text-fill: -textcolor;
+}
+
+.jfx-button
+{
+	-fx-background-color: -buttoncolor;
+	-fx-text-fill: -textcolor;
+	-fx-cursor: hand;
+	-fx-background-radius: 2;
+}
+.jfx-button .jfx-rippler
+{
+      -jfx-rippler-fill: white;
+}
+.jfx-button.searchBarButton > .jfx-rippler
+{
+	-jfx-rippler-fill: gray;
+}
+
+.split-pane *.split-pane-divider 
+{
+    -fx-padding: 1 1 1 1;
+}
+/*
+ * TreeView
+ */
+ 
+ 
+
+/*
+ * Menu bar
+ */
+ .menu-bar
+ {
+ 	-fx-background-color: -backcolor;
+ }
+.menu-bar > .container > .menu-button:hover,
+.menu-bar > .container > .menu-button:focused,
+.menu-bar > .container > .menu-button:showing
+{
+	-fx-background-color: -buttoncolor;
+}
+.menu-item:focused, .menu-item:hovered
+{
+	-fx-background-color: -buttoncolor;
+}
+.menu-item, .context-menu
+{
+	-fx-background-color: white;
+}
+
+/*
+    The tab bar
+*/
+
+.jfx-tab-pane .headers-region 
+{
+    -fx-background-color: -backcolor;
+}
+.jfx-tab-pane
+{
+	-fx-tab-min-width:211.7px;
+  	-fx-tab-max-width:211.7px;
+ 	-fx-tab-min-height:50px;
+ 	-fx-tab-max-height:40px;
+ 	-fx-background-color: -backcolor;
+}
+.jfx-tab-pane .tab-header-background
+ {
+    -fx-background-color: -backcolor;
+}
+.jfx-tab-pane .tab-header-area .tab-selected-line 
+{
+    -fx-background-color: -buttoncolor;
+}
+.jfx-tab-pane .tab-header-area .jfx-rippler
+{
+    -jfx-rippler-fill: -textcolor;
+}
+.jfx-tab-pane .headers-region .tab .tab-container .tab-label
+{
+	-fx-text-fill: -textcolor;
+}
+
+/*
+    Jfx text field
+*/
+.jfx-text-field, .jfx-password-field
+{
+	-fx-prompt-text-fill: derive(white, -40%);
+	-fx-text-fill: black;
+	-jfx-focus-color: -buttoncolorlight;
+	-jfx-unfocus-color: -buttoncolor2light;
+	-jfx-label-float: true;
+	-fx-background-color: transparent;
+}
+.jfx-text-field:hover, .jfx-password-field:hover
+{
+	-fx-background-color: derive(white, -10%);
+	-fx-background-insets: -12 0 -3 -3;
+	-fx-background-radius: 2 2 0 0;
+}
+.jfx-text-field:focused, .jfx-password-field:focused
+{
+	-fx-background-color: derive(white, -20%);
+	-fx-background-insets: -12 0 -3 -3;
+	-fx-background-radius: 2 2 0 0;
+}
+/*
+ * Toggle Button 
+ */
+ .jfx-toggle-button
+ {
+ 	-jfx-toggle-color: -buttoncolor;
+ }
+/*
+ * JFX ComboBox 
+ */
+.jfx-combo-box
+{
+	-jfx-focus-color: transparent;
+	-jfx-unfocus-color: transparent;
+	-fx-background-radius: 2;
+	-fx-background-color: white;
+	-fx-background-insets: -3 -3 -3 -3;
+	-fx-border-color: black;
+	-fx-border-width: 0;
+	-fx-border-insets: -3 -3 -3 -3;
+}
+.combo-box-popup .list-view .list-cell:filled
+{
+	-fx-background-color: white;
+	-fx-text-fill: black;
+}
+.combo-box-popup .list-view .list-cell:filled:selected
+{
+	-fx-background-color: derive(-buttoncolor, 40%);
+	-fx-text-fill: black;
+}
+.combo-box-popup .list-view .list-cell:filled:hover, .combo-box-popup .list-view .list-cell:filled:selected:hover
+{
+	-fx-text-fill: white;
+	-fx-background-color: -buttoncolor;
+}
+/*
+* JFX Date Picker 
+*/
+.jfx-date-picker
+{
+    -jfx-default-color: gray;
+}
+.jfx-date-picker .jfx-text-field
+{
+	-fx-text-fill: black;
+	-jfx-focus-color: transparent;
+	-jfx-unfocus-color: transparent;
+	-jfx-label-float: false;
+	-fx-prompt-text-fill: gray;
+	-fx-background-color: white;
+	-fx-background-insets: -3 0 -3 -6;
+	-fx-background-radius: 2;
+}
+.jfx-date-picker .jfx-button
+{ 
+	-fx-background-color: WHITE;
+	-fx-background-radius: 50;
+}
+
+.jfx-date-picker > .arrow-button > .jfx-svg-glyph, .jfx-date-picker > .arrow-button
+{
+    -fx-background-color: black;
+    -fx-padding: 0 0 0 -20px;
+}
+
+.jfx-date-picker .jfx-button .jfx-rippler
+{ 
+	-jfx-rippler-fill: gray;
+}
+.date-picker-popup > .month-year-pane 
+{
+    -fx-background-color: -buttoncolor;
+}
+.date-picker-popup > * > .date-picker-list-view > .virtual-flow > .clipped-container > .sheet > .data-picker-list-cell:selected-year 
+{
+    -fx-font-size: 24;
+    -fx-font-weight: BOLD;
+    -fx-text-fill: #313131;
+}
+/*
+ * JFX Time Picker
+*/
+.jfx-time-picker 
+{
+    -jfx-default-color: -buttoncolor;
+}
+/*
+ * JFX Buttons 
+ */
+ .jfx-check-box
+ {
+ 	-jfx-checked-color: -buttoncolor;
+ 	-jfx-unchecked-color: black;
+ }
+ .jfx-radio-button
+ {
+ 	-jfx-selected-color: -textcolor;
+ 	-jfx-unselected-color: -textcolor;
+ }
+ /*
+  * JFX ListView 
+  */ 
+ .jfx-list-cell
+ {
+ 	-fx-background-color: -buttoncolor;
+ 	-fx-text-fill: white;
+ }
+ .jfx-list-cell:selected
+ {
+ 	-fx-background-color: -buttoncolorlight;
+ 	-fx-text-fill: white;
+ }
+ .jfx-list-cell:selected:hover
+ {
+ 	-fx-background-color: -buttoncolorlight;
+ 	-fx-text-fill: white;
+ }
+ .jfx-list-cell:hover
+ {
+ 	-fx-background-color: -buttoncolor;
+ }
+ .jfx-rippler 
+ {
+    -jfx-rippler-fill: white;
+ }
+ 
+ /*
+  * Scrollbars 
+  */
+  /* The main scrollbar CSS class of ListView */
+.scroll-bar:horizontal ,
+.scroll-bar:vertical{
+    -fx-background-color:transparent;
+ 
+}
+ 
+/* The increment and decrement button CSS class of scrollbar */
+.increment-button ,.mylistview .decrement-button {
+    -fx-background-color:transparent;
+	-fx-border-color:derive(gray,80%);
+}
+ 
+/* The main scrollbar **track** CSS class  */
+.scroll-bar:horizontal .track ,
+.scroll-bar:vertical .track{
+     -fx-background-color: transparent;
+	 -fx-border-color:derive(gray,80%);
+	 -fx-background-radius: 0em;
+}
+ 
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color:derive(-buttoncolor,60%);
+	-fx-background-insets: 0, 0, 0;
+	-fx-background-radius: 0em;
+ 
+}
+.scroll-bar:horizontal:hover .track ,
+.scroll-bar:horizontal:pressed .track ,
+.scroll-bar:vertical:hover .track,
+.scroll-bar:vertical:pressed .track{
+     -fx-background-color: derive(-buttoncolor,-40%);
+ 
+	 -fx-opacity: 0.2;
+	 -fx-background-radius: 0em;
+ 
+}
+/* The main scrollbar **thumb** CSS class on event of "hover" and "pressed" */
+.scroll-bar .thumb:hover,
+.scroll-bar .thumb:pressed{
+    -fx-background-color: derive(black,50%);
+}
+.increment-button:hover , .decrement-button:hover {
+    -fx-background-color:derive(gray,100%);
+	-fx-border-color:derive(gray,80%);	
+	-fx-padding:10px;
+}
+
+/*
+ * Tree table view
+*/
+.jfx-tree-table-view
+{
+	
+}
+.jfx-tree-table-view .column-header .label
+{
+	-fx-font-size: 10;
+}
+.jfx-tree-table-view .column-header,
+.jfx-tree-table-view .column-header .filler,
+.jfx-tree-table-view .column-header-background .filler
+{
+    -fx-border-color: black;
+    -fx-border-width: 0.2 0 0.2 0;
+}
+/**/
+.jfx-tree-table-view .column-header.centerAlignedColumn > .label
+{
+	-fx-alignment: CENTER;
+}
+.jfx-tree-table-view .column-header.rightAlignedColumn > .label
+{
+	-fx-alignment: CENTER-RIGHT;
+	-fx-label-padding: 0 4 0 0;
+}
+.jfx-tree-table-view .column-header.leftAlignedColumn > .label
+{
+	-fx-alignment: CENTER-LEFT;
+}
+.tree-table-row-cell:selected
+{
+	-fx-background-color: derive(-buttoncolor, 90%);
+    -fx-border-color: black;
+    -fx-border-width: 0 0.1 0.1 0.1;
+}
+.tree-table-row-cell 
+{
+	-fx-border-color: black;
+    -fx-border-width: 0 0.1 0.1 0.1;
+}
+.tree-table-row-cell:empty
+{
+    -fx-border-width: 0;
+}
+/*
+    -fx-tree-table-rippler-color: white;
+    -jfx-header-color: white;
+    -fx-background-color: -backcolor;
+ }
+ .jfx-tree-table-view .tree-table-cell
+ {
+ 	-fx-background-color: -backcolor;
+ }
+ .jfx-tree-table-view
+ {
+ 	-fx-text-fill: white;
+ }*/
+
+

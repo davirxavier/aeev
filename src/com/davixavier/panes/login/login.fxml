@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="primaryPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: -buttoncolor;" stylesheets="@../../application/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.davixavier.panes.login.LoginController">
+   <children>
+      <VBox fx:id="vbox" alignment="CENTER" maxHeight="300.0" maxWidth="262" prefHeight="328.0" prefWidth="262.0" style="-fx-spacing: 25; -fx-background-color: -backcolorlight; -fx-background-radius: 10;">
+         <children>
+            <VBox alignment="CENTER" prefHeight="106.0" prefWidth="262.0">
+               <children>
+                  <ImageView fx:id="userimg" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="NEVER" />
+                  <Label text="AEEV - Agenda Eletrônica">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label style="-fx-text-fill: -backcolor2;" text="Realize seu login">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </VBox>
+            <JFXTextField fx:id="usernameField" labelFloat="true" maxWidth="200.0" prefHeight="25.0" prefWidth="214.0" promptText="Insira seu nome de usuário" />
+            <JFXPasswordField fx:id="senhaField" maxWidth="200.0" promptText="Insira sua senha" />
+            <JFXButton buttonType="RAISED" onAction="#entrar" text="Entrar" />
+         </children>
+         <effect>
+            <DropShadow height="32.86" radius="15.93" spread="0.13" width="32.86" />
+         </effect>
+      </VBox>
+   </children>
+</StackPane>
